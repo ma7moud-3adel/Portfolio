@@ -1,0 +1,237 @@
+* {
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::selection {
+    background-color: #021b2b;
+    color: yellowgreen;
+}
+
+
+header {
+    background-color: rgb(61, 87, 79);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(23, 23, 43);
+}
+.top-nav a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px;
+    color: rgb(23, 23, 43);
+}.top-nav a:hover {
+    border-radius: 8px;
+    background-color: #023258;
+    color: greenyellow;
+}
+
+
+.main {
+    padding: 100px;
+    background-image: url(../Img/back-ground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.main h2 {
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.main h2 span {
+    color: rgb(23, 81, 85);
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3 {
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    margin: 10px 0 20px 0;
+}
+.main-btn {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0e4e79;
+    color: aliceblue;
+    padding: .5em;
+    border-radius: 8px;
+    font-size: 1.1em;
+    margin: 10px;
+    transition-duration: 1s;
+} .main-btn:hover {
+    background-color: #021b2b;
+    transform: scale(1.2);
+}
+.social{
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+.social a {
+    color: aliceblue;
+    font-size: 1.8em;
+    margin: 5px;
+    padding: 5px;
+    transition-duration: .5s;
+}.social a:hover {
+    color: #021b2b;
+}
+
+
+.services, .projects, .contact {
+    padding: 50px   ;
+    width: 100%;
+    border-radius: 10px;
+} .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 2em;
+    color: #052335;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card {
+    width: calc(100%/4);
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 25px gray ;
+    transition: .7s;
+    text-align: center;
+}
+.card:hover {
+    transform: scale(1.2);
+}
+.icon {
+    font-size: 8em;
+    color: #184058;
+}
+.info h3 {
+    color: #184058;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 10px;
+} 
+
+
+.projects{
+    background-color: #023258;
+}
+.projects .title {
+    color: #fff;
+}
+.projects .content {
+    flex-wrap: wrap;
+}
+.pro-card {
+    width: calc(100%/4);
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 5px 25px gray ;
+    transition: .7s;
+}
+.pro-card .pro-img img {
+    width: 100%;
+    height: 200px;
+    filter: grayscale(1);
+}.pro-card:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}.pro-card:hover img{
+    filter: grayscale(0);
+    opacity: .9;
+}
+.pro-info {
+    padding: 10px;
+}
+.pro-info p {
+    font-size: .8em;
+    margin: 5px;
+}
+.pro-name {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.pro-info a:hover {
+    color : yellowgreen;
+}
+
+
+
+.contact {
+    background-color: black;
+}.contact .title{
+    color: aliceblue;
+}
+
+.send , .information {
+    margin: 50px;
+    padding: 20px;
+}
+.send input {
+    width: 250px;
+    height: 42px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} .send textarea {
+    width: 525px;
+    height: 100px;
+    border-radius: 10px;
+}input[type = "submit"] {
+    background-color: greenyellow;
+    color: aliceblue;
+    font-size: 1.2em;
+    margin: 20px 140px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: aliceblue;
+}.information p span {
+    color: greenyellow;
+}
+footer .social a:hover {
+    color: greenyellow;
+}
+
